@@ -86,16 +86,44 @@
         </section>
         <section class="modal">
             <h2>Поиск гостиницы в Седоне</h2>
-          <form></form>
+          <form class="modal-search" method="POST" action="https://echo.htmlacademy.ru">
+            <p>
+            <label> Дата заезда:
+              <input type="date" name="arrival-date" id="arrival-date" required>
+            </label>
+          </p>
+          <p>
+            <label> Дата выезда:
+              <input type="date" name="exit-date" id="exit-date" required>
+            </label>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <button class="button button-subtract" aria-label="Уменьшить число взрослых">-</button>
+                <label for="adult">Взрослыe:</label>
+                <input type="text" name="adult" id="adult" value="2">
+                <button class="button button-add" ria-label="Увеличить число взрослых">+</button>
+              </li>
+              <li>
+                <button class="button button-subtract" aria-label="Уменьшить число детей">-</button>
+                <label for="kid">Дети:</label>
+                <input type="text" name="kid" id="kid" value="1">
+                <button class="button button-add" aria-label="Увеличить число детей">+</button>
+              </li>
+            </ul>
+          </p>
+          <button type="submit">Найти</button>
+          </form>
         </section>
     </main>
     <footer class="main-footer">
       <b class="footer-visitsedona">#visitsedona</b>
       <div class="footer-social">
         <ul>
-          <li><a class="cocial-button cocial-tw" href="#"><img src="img/tw-icon.png" width="17" height="15" alt="Твиттер"></a></li>
-          <li><a class="cocial-button cocial-fb" href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук"></a></li>
-          <li><a class="cocial-button cocial-yt" href="#"><img src="img/yt-icon.png" width="20" height="16" alt="Ютуб"></a></li>
+          <li><a class="cocial-button cocial-tw" href="#" aria-label="Седона в твиттере"><img src="img/tw-icon.png" width="17" height="15" alt="Твиттер"></a></li>
+          <li><a class="cocial-button cocial-fb" href="#" aria-label="Седона в Фейсбуке"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук"></a></li>
+          <li><a class="cocial-button cocial-yt" href="#" aria-label="Седона в Ютубе"><img src="img/yt-icon.png" width="20" height="16" alt="Ютуб"></a></li>
         </ul>
     </div>
     <div class="footer-copyright">
