@@ -87,23 +87,22 @@
         <section class="modal">
             <h2>Поиск гостиницы в Седоне</h2>
           <form class="modal-search" method="POST" action="https://echo.htmlacademy.ru">
-            <p>
-            <label> Дата заезда:
-              <input type="date" name="arrival-date" id="arrival-date" required>
-            </label>
-          </p>
-          <p>
-            <label> Дата выезда:
-              <input type="date" name="exit-date" id="exit-date" required>
-            </label>
-          </p>
-          <p>
-            <ul>
+            <p class="modal-search-arrival-date"> 
+              <label> Дата заезда:
+                <input type="date" name="arrival-date" id="arrival-date" required>
+              </label>
+            </p>
+            <p class="modal-search-exit-date">
+                <label> Дата выезда:
+                  <input type="date" name="exit-date" id="exit-date" required>
+                </label>
+            </p>
+            <ul class="modal-search-number_of_persons">
               <li>
                 <button class="button button-subtract" aria-label="Уменьшить число взрослых">-</button>
                 <label for="adult">Взрослыe:</label>
                 <input type="text" name="adult" id="adult" value="2">
-                <button class="button button-add" ria-label="Увеличить число взрослых">+</button>
+                <button class="button button-add" aria-label="Увеличить число взрослых">+</button>
               </li>
               <li>
                 <button class="button button-subtract" aria-label="Уменьшить число детей">-</button>
@@ -112,7 +111,6 @@
                 <button class="button button-add" aria-label="Увеличить число детей">+</button>
               </li>
             </ul>
-          </p>
           <button type="submit">Найти</button>
           </form>
         </section>
