@@ -11,14 +11,6 @@ body {
   background-color:#ffffff;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  }
-
 a {
   text-decoration: none;
   }
@@ -33,9 +25,150 @@ a {
 
 .desctiption-text {
   font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
   text-align: center;
   color: #333333;
+}
+
+.inner-page .title-text {
+  text-align: unset;
+}
+
+.inner-page .filter {
+  background-color: #e5f2fa;
+  background-image: url(../img/filter-background-photo.jpg);
+  background-repeat: no-repeat;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter .title-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.filter .desctiption-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.filter-cost {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  background-color: transparent;
+  outline: 2px solid #ffffff;
+  outline-offset: -2px;
+}
+
+.button-filter {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  background-color: transparent;
+  outline: 2px solid #ffffff;
+  outline-offset: -2px;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.filter fieldset {
+  border: 0;
+}
+
+.options {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 1, 1, 0.2);
+}
+
+.options-found {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.options-about {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.button-option {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.button-active {
+  color: #81b3d2;
+  border: none;
+}
+
+.catalog {
+  background-color: #ffffff;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 1, 1, 0.2);
+}
+
+.catalog-item h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.catalog-item-stars {
+  list-style: none;
+}
+.catalog-item-rating {
+  background-color: #f2f2f2;
+}
+
+.catalog-item-type .button {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.catalog-item-type .button:focus,
+.catalog-item-type .button:hover {
+  background-color: #669ec0;
+}
+
+.catalog-item-type .button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.catalog-item-price .button {
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.catalog-item-price .button:focus,
+.catalog-item-price .button:hover {
+  background-color: #604e43;
+}
+
+.catalog-item-price .button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
 
 .main-navigation {
