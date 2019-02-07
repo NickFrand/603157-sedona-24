@@ -31,7 +31,8 @@ a {
   color: #333333;
 }
 
-.inner-page .title-text {
+.inner-page .title-text,
+.inner-page .desctiption-text {
   text-align: unset;
 }
 
