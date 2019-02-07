@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+  background-color:#ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  }
+
+a {
+  text-decoration: none;
+  }
+
+.title-text {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+
+.desctiption-text {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+  }
+
+.main-navigation ul {
+  list-style: none;
+  }
+
+.menu-item a {
+  color: #000000;
+  }
+.menu-item a:focus,
+.menu-item a:hover {
+  color: #81b3d2
+  }
+
+.menu-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+  }
+
+.intro {
+  background-color: #e5f2fa;
+  background-image: url("../img/bg-image.jpg");
+  background-repeat: no-repeat;
+  }
+
+.description {
+  background-color: #ffffff;
+  color: #000000;
+  }
+  
+.features {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item .title-text {
+  color: #ffffff;
+  line-height: 21px;
+}
+
+.feature-item .desctiption-text {
+  color: #ffffff;
+}
+
+.features-list li:nth-of-type(1) {
+  background-color: #81b3d2;
+  color: #ffffff;
+  background-image: url(../img/city-image.jpg);
+  background-repeat: no-repeat;
+}
+
+.features-list li:nth-of-type(2) {
+  background-color: #81b3d2;
+  color: #ffffff;
+  background-image: url(../img/canyon-image.jpg);
+  background-repeat: no-repeat;
+}
+
+.feature-item-side {
+  background-color: #eeeeee;
+}
+
+.feature-item-side .title-text {
+  color: #000000;
+}
+
+.feature-item-side .desctiption-text {
+  color: #333333;
+}
+
+.benefits-list {
+  list-style: none;
+}
+
+.benefit-item {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.benefit-item .title-text {
+  color: #000000;
+  line-height: 21px;
+}
+
+.benefit-house {
+  background-image: url(../img/house-icon.png);
+  background-repeat: no-repeat;
+}
+
+.benefit-eat {
+  background-image: url(../img/burger-icon.png);
+  background-repeat: no-repeat;
+}
+
+.benefit-souvenirs {
+  background-image: url(../img/present-icon.png);
+  background-repeat: no-repeat;
+}
+
+.canyon-image {
+  background-image: url(../img/canyon-image.jpg);
+  background-repeat: no-repeat;
+}
+
+.offer {
+  background-color: #ffffff;
+}
+
+.offer-question {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.offer .title-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.map {
+  background-image: url(../img/map-image.jpg);
+  width: 1200px;
+  height: 593px;
+}
+
+.modal {
+  background-color: #ffffff;
+}
+
+.modal a {
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.modal a:focus,
+.modal a:hover {
+  background-color: #604e43;
+}
+
+.modal a:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.modal-search label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.modal-search input[type="date"],
+.modal-search input[type="text"],
+.modal-search button {
+  font-weight: 700;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+}
+.modal-search input[type="date"]:hover {
+ background-color: #ebebeb;
+}
+
+.modal-search input[type="date"]:focus {
+  background-color: transparent;
+  outline: 2px solid #e5e5e5;
+  outline-offset: -2px;
+}
+
+.modal-search-number_of_persons {
+  list-style: none;
+}
+
+.modal-search .button-search {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+}
+
+.modal-search .button-search:focus,
+.modal-search .button-search:hover{
+  background-color: #669ec0;
+}
+
+.modal-search .button-search:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.main-footer {
+  background-color: #ffffff; 
+}
+
+.main-footer .footer-visitsedona {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-copyright .desctiption-text {
+  text-align: unset;
+}
+
