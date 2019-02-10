@@ -8,12 +8,31 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
-  background-color:#ffffff;
+  background-color:#f2f2f2;
 }
 
 a {
   text-decoration: none;
   }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  background: url(../img/bg-image.jpg) no-repeat;
+}
 
 .title-text {
   font-size: 21px;
@@ -173,11 +192,26 @@ a {
 }
 
 .main-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  min-height: 56px;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
   }
+
+.main-header-logo {
+  width: 239px;
+  min-height: 71px;
+}
+
+.main-navigation-list-left,
+.main-navigation-list-right {
+  width: 478px;
+  height: 56px;
+}
 
 .main-navigation ul {
   list-style: none;
@@ -196,12 +230,24 @@ a {
   }
 
 .intro {
-  background-color: #e5f2fa;
-  background-image: url("../img/bg-image.jpg");
-  background-repeat: no-repeat;
-  }
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+} 
+
+.intro p {
+  margin: 76px auto 0 auto;
+}
+
+.intro img {
+  margin: 0;
+}
 
 .description {
+  display: flex;
+  flex-direction: column;
+  min-height: 216px;
   background-color: #ffffff;
   color: #000000;
   }
@@ -212,7 +258,26 @@ a {
 }
 
 .features-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.text-container p {
+  width: 280px;
+}
+
+.text-container p:nth-of-type(1) {
+  width: 155px;
 }
 
 .feature-item .title-text {
@@ -225,21 +290,38 @@ a {
 }
 
 .features-list li:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 1200px;
+  min-height: 256px;
   background-color: #81b3d2;
   color: #ffffff;
   background-image: url(../img/city-image.jpg);
   background-repeat: no-repeat;
+  background-position: right;
 }
 
 .features-list li:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 1200px;
+  min-height: 256px;
   background-color: #81b3d2;
   color: #ffffff;
   background-image: url(../img/canyon-image.jpg);
   background-repeat: no-repeat;
+  background-position: left;
 }
 
 .feature-item-side {
+  display: flex;
+  align-items: center;
   background-color: #eeeeee;
+  min-height: 256px;
 }
 
 .feature-item-side .title-text {
@@ -251,32 +333,51 @@ a {
 }
 
 .benefits-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 1200px;
+  min-height: 330px;
   list-style: none;
 }
 
 .benefit-item {
-  background-color: #ffffff;
-  color: #000000;
+    color: #000000;
 }
+
+.benefit-item .text-container {
+  justify-content: center;
+  min-height: 330px;
+}
+
+.element-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 252px;
+  min-height: 201px;
+  background-image: url(../img/house-icon.png);
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.element-container.benefit-eat {
+  background-image: url(../img/burger-icon.png);
+}
+
+.element-container.benefit-souvenirs {
+  background-image: url(../img/present-icon.png);
+}
+
 
 .benefit-item .title-text {
   color: #000000;
   line-height: 21px;
 }
 
-.benefit-house {
-  background-image: url(../img/house-icon.png);
-  background-repeat: no-repeat;
-}
-
-.benefit-eat {
-  background-image: url(../img/burger-icon.png);
-  background-repeat: no-repeat;
-}
-
-.benefit-souvenirs {
-  background-image: url(../img/present-icon.png);
-  background-repeat: no-repeat;
+.benefit-item .desctiption-text {
+  line-height: 14px;
 }
 
 .canyon-image {
@@ -285,7 +386,23 @@ a {
 }
 
 .offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 291px;
   background-color: #ffffff;
+}
+
+.offer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 434px;
+}
+
+.offer .desctiption-text {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .offer-question {
@@ -295,24 +412,28 @@ a {
   text-align: center;
 }
 
-.offer .title-text {
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.map {
-  background-image: url(../img/map-image.jpg);
-  width: 1200px;
-  height: 593px;
-}
-
 .modal {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
+  width: 568px;
+  min-height: 481px;
+}
+
+.modal-mask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #766357;
+  min-height: 86px;
+  width: 568px;
 }
 
 .modal a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
   color: #ffffff;
-  background-color: #766357;
 }
 
 .modal a:focus,
@@ -325,6 +446,15 @@ a {
   background-color: #503e33;
 }
 
+.modal-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 568px;
+  min-height: 395px;
+}
+
 .modal-search label {
   font-size: 14px;
   line-height: 26px;
@@ -335,11 +465,22 @@ a {
 .modal-search input[type="date"],
 .modal-search input[type="text"],
 .modal-search button {
+  min-height: 38px;
   font-weight: 700;
   color: #000000;
   background-color: #f2f2f2;
   border: none;
 }
+
+.modal-search input[type="date"] {
+  width: 346px;
+}
+
+.modal-search input[type="text"],
+.modal-search .button {
+  width: 38px;
+}
+
 .modal-search input[type="date"]:hover {
  background-color: #ebebeb;
 }
@@ -355,7 +496,8 @@ a {
 }
 
 .modal-search .button-search {
-  color: #ffffff;
+  width: 458px;
+  color: #fff;
   text-transform: uppercase;
   background-color: #81b3d2;
 }
@@ -371,16 +513,38 @@ a {
 }
 
 .main-footer {
-  background-color: #ffffff; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 593px;
+  background-color: #fff;
+  background-image: url(../img/map-image.jpg);
+}
+
+.footer-mask {
+  display: flex;
+  width: 1200px;
+  min-height: 120px;
+  background-color: #fff;
+  opacity: 0.9;
 }
 
 .main-footer .footer-visitsedona {
+  width: 400px;
   font-size: 21px;
   font-weight: 700;
 }
 
-.footer-social ul {
+.footer-social {
+  width: 400px;
+}
+
+.social-list {
   list-style: none;
+}
+
+.footer-copyright {
+  width: 400px;
 }
 
 .footer-copyright .desctiption-text {
