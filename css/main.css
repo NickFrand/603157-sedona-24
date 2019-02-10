@@ -25,13 +25,12 @@ a {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 1200px;  
 }
 
 .main-header {
   display: flex;
   flex-direction: column;
-  background: url(../img/bg-image.jpg) no-repeat;
 }
 
 .title-text {
@@ -55,14 +54,36 @@ a {
   text-align: unset;
 }
 
-.inner-page .filter {
-  background-color: #e5f2fa;
+
+.filter form {
+  display: flex;
+  width: 1200px;
+  min-height: 217px;
   background-image: url(../img/filter-background-photo.jpg);
   background-repeat: no-repeat;
+  background-size: 1200px 800px;
+  background-position: center -294px;
+}
+
+.filter-left-column {
+  display: flex;
+  width: 600px;
+  justify-content: flex-start;
+}
+
+.filter-right-column {
+  display: flex;
+  width: 600px;
+  justify-content: flex-end;
 }
 
 .filter ul {
   list-style: none;
+}
+
+.filter fieldset {
+  margin: 0;
+  padding: 0;
 }
 
 .filter .title-text {
@@ -108,8 +129,24 @@ a {
 }
 
 .options {
+  display: flex;
+  min-height: 86px;
   background-color: #ffffff;
   border-bottom: 1px solid rgba(0, 1, 1, 0.2);
+}
+
+.options-left-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+
+.options-right-column {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 600px;
 }
 
 .options-found {
@@ -141,10 +178,27 @@ a {
 }
 
 .catalog-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.catalig-item-left-colmun {
+  display: flex;
+  width: 600px;
+  justify-content: center;
+}
+
+.catalig-item-right-colmun {
+  display: flex;
+  width: 600px;
+  justify-content: flex-end;
+}
+
 .catalog-item {
+  display: flex;
   background-color: #ffffff;
   border-bottom: 1px solid rgba(0, 1, 1, 0.2);
 }
@@ -234,6 +288,10 @@ a {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  background: url(../img/bg-image.jpg) no-repeat;
+  background-repeat: no-repeat;
+  background-size: 1200px 800px;
+  background-position: center -83px;
 } 
 
 .intro p {
@@ -519,6 +577,11 @@ a {
   min-height: 593px;
   background-color: #fff;
   background-image: url(../img/map-image.jpg);
+}
+
+.inner-page .main-footer {
+  background: #fff;
+  min-height: 120px;
 }
 
 .footer-mask {
