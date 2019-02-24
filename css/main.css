@@ -1,3 +1,24 @@
+@keyframes popap-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes need-text {
+  0% {
+    background-color: #f2f2f2;
+  }
+  50% {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    background-color: #f2f2f2;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -717,15 +738,11 @@ img {
   top: 2083px;
   margin-left: -284px;
   display: block;
-  background-color: #ffffff;
   width: 568px;
-  height: 481px;
-  box-shadow: 0 38px 95px -21px rgba(0, 0, 0, 0.2);
 }
 
 .modal h2 {
   margin: 0;
-  margin-bottom: 55px;
 }
 
 .modal a {
@@ -749,8 +766,23 @@ img {
 }
 
 .modal-search {
+  display: none;
+  padding-top: 55px;
   width: 568px;
-  min-height: 395px;
+  min-height: 340px;
+  background-color: #ffffff;
+  box-shadow: 0 38px 95px -21px rgba(0, 0, 0, 0.2);
+}
+
+.modal-show {
+  display: block;
+  animation-name: popap-animation;
+  animation-duration: 0.8s;
+}
+
+.wrong-input {
+  animation-name: need-text;
+  animation-duration: 1s;
 }
 
 .modal-search-date,
@@ -911,7 +943,6 @@ img {
   justify-content: flex-end;
   min-height: 593px;
   background-color: #fff;
-  background-image: url(../img/map-image.jpg);
   box-shadow: 0 20px 30px 0 rgba(50, 50, 50, .3), 0 20px 30px 0 #ffffff;
 }
 
@@ -921,6 +952,7 @@ img {
 }
 
 .footer-mask {
+  position: absolute;
   display: flex;
   width: 1200px;
   min-height: 120px;

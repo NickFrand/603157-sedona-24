@@ -100,6 +100,7 @@
       </section>
     </main>
     <footer class="main-footer container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d418854.52446225093!2d-111.8332317!3d34.8988958!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2sru!4v1551002502847" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
       <div class="footer-mask">
       <div class="footer-visitsedona"><p>#visitsedona</p></div>
       <div class="footer-social">
@@ -120,12 +121,12 @@
     </div>
     </footer>
     <section class="modal">
-      <h2><a href="#">Поиск гостиницы в Седоне</a></h2>
-      <form class="modal-search" method="post" action="https://echo.htmlacademy.ru">
+      <h2><a class="modal-activate" href="#">Поиск гостиницы в Седоне</a></h2>
+      <form class="modal-search modal-show" method="post" action="https://echo.htmlacademy.ru">
         <div class="modal-search-date modal-search-arrival-date"> 
           <label for="arrival-date">Дата заезда:</label>
           <p class="modal-search-choose-date">
-          <input type="date" name="arrival-date" id="arrival-date" required>
+          <input type="date" name="arrival-date" id="arrival-date">
           <button class="modal-search-calendar"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
          <g id="calendar_1_">
@@ -152,7 +153,7 @@
         <div class="modal-search-date modal-search-exit-date">
           <label for="exit-date">Дата выезда:</label>
           <p class="modal-search-choose-date">
-          <input type="date" name="exit-date" id="exit-date" required>
+          <input type="date" name="exit-date" id="exit-date">
           <button class="modal-search-calendar"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
          <g id="calendar_1_">
@@ -178,13 +179,13 @@
         </div>
         <div class="modal-search-number_of_persons">
           <label for="adult">Взрослыe:</label>
-          <div class="modal-search-count">
+          <div class="modal-search-count modal-search-count-adult">
           <button class="button button-subtract" aria-label="Уменьшить число взрослых"></button>
           <input type="text" name="adult" id="adult" value="2">
           <button class="button button-add" aria-label="Увеличить число взрослых"></button>
           </div>
           <label for="kid">Дети:</label>
-          <div class="modal-search-count">
+          <div class="modal-search-count modal-search-count-kid">
           <button class="button button-subtract" aria-label="Уменьшить число детей"></button>
           <input type="text" name="kid" id="kid" value="0">
           <button class="button button-add" aria-label="Увеличить число детей"></button>
@@ -193,5 +194,6 @@
           <button class="button-search" type="submit">Найти</button>
       </form>
     </section>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
