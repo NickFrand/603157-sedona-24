@@ -27,7 +27,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #333333;
+  color: #333;
   text-transform: uppercase;
   background-color:#f2f2f2;
 }
@@ -38,7 +38,7 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
+  
 }
 
 .visually-hidden {
@@ -52,7 +52,7 @@ img {
 .container {
   margin: 0 auto;
   width: 1200px;  
-  box-shadow: 0 10px 30px 0 rgba(50, 50, 50, .3), 0 -10px 30px 0 #ffffff;
+  box-shadow: 0 10px 30px 0 rgba(50, 50, 50, .3), 0 -10px 30px 0 #fff;
 }
 
 .main-header {
@@ -65,7 +65,7 @@ img {
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  color: #000000;
+  color: #000 ;
 }
 
 .desctiption-text {
@@ -73,7 +73,7 @@ img {
   line-height: 21px;
   font-weight: 400;
   text-align: center;
-  color: #333333;
+  color: #333;
 }
 
 .inner-page .title-text,
@@ -211,14 +211,14 @@ img {
 .filter .title-text {
   font-size: 16px;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
 }
 
 .filter .desctiption-text {
   display: inline-block;
   vertical-align: top;
   padding-top: 3px;
-  color: #ffffff;
+  color: #fff;
   font-size: 14px;
   font-weight: 400;
 }
@@ -227,9 +227,9 @@ img {
   font-size: 14px;
   font-weight: 400;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   background-color: transparent;
-  outline: 2px solid #ffffff;
+  outline: 2px solid #fff;
   outline-offset: -2px;
 }
 
@@ -239,16 +239,16 @@ img {
   line-height: 21px;
   padding: 6px 33px 5px 34px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   background-color: transparent;
-  outline: 2px solid #ffffff;
+  outline: 2px solid #fff;
   outline-offset: -2px;
 }
 
 .button-filter:hover,
 .button-filter:focus {
-  color: #000000;
-  background-color: #ffffff;
+  color: #000;
+  background-color: #fff;
 }
 
 .filter fieldset {
@@ -258,7 +258,7 @@ img {
 .options {
   display: flex;
   min-height: 86px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-bottom: 1px solid rgba(0, 1, 1, 0.2);
 }
 
@@ -280,13 +280,13 @@ img {
 }
 
 .options-found {
-  color: #000000;
+  color: #000;
   font-size: 21px;
   font-weight: 700;
 }
 
 .options-about {
-  color: #000000;
+  color: #000;
   line-height: 21px;
   font-size: 12px;
   font-weight: 400;
@@ -305,7 +305,7 @@ img {
 }
 
 .button-option:active {
-  color: #000000;
+  color: #000;
   border: none;
 }
 
@@ -328,7 +328,7 @@ img {
 .options-arrow:hover polygon,
 .options-arrow:focus polyline,
 .options-arrow:focus polygon {
-  fill: #000000;
+  fill: #000;
 }
 
 .options-active polyline,
@@ -344,7 +344,7 @@ img {
 }
 
 .catalog {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .catalog-list {
@@ -391,7 +391,7 @@ img {
 
 .catalog-item-right-colmun .catalog-item-rating {
   height: 24px;;
-  color: #666666;
+  color: #666;
   text-align: center;
   padding-top: 3px;
   margin-top: 39px;
@@ -411,7 +411,7 @@ img {
 
 .catalog-item {
   display: flex;
-  background-color: #ffffff;
+  background-color: #fff;
   border-bottom: 1px solid rgba(0, 1, 1, 0.2);
   min-height: 150px;
 }
@@ -460,7 +460,7 @@ img {
 
 .catalog-item .button-more {
   display: block;
-  color: #ffffff;
+  color: #fff;
   background-color: #81b3d2;
   width: 110px;
   height: 24px;
@@ -478,7 +478,7 @@ img {
 }
 
 .catalog-item .button-buy {
-  color: #ffffff;
+  color: #fff;
   background-color: #766357;
   width: 142px;
   height: 24px;
@@ -504,8 +504,8 @@ img {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
-  background-color: #ffffff;
+  color: #000;
+  background-color: #fff;
   }
 
 .main-header-logo {
@@ -523,6 +523,7 @@ img {
 
 .main-navigation ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: stretch;
   align-items: center;
   list-style: none;
@@ -533,10 +534,8 @@ img {
 .menu-item a {
   display: block;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
   min-width: 239px;
-  color: #000000;
+  color: #000;
   }
 .menu-item a:focus,
 .menu-item a:hover {
@@ -560,33 +559,33 @@ img {
   background-image: 
     url("../img/mask-image.png"),
     url("../img/bg-image.jpg");
-  background-position: center 456px, 0 -83px;
+  background-position: center 450px, 0 -83px;
   background-repeat: no-repeat, repeat;
 } 
 
 .intro p {
-  margin: 76px auto 79px auto;
+  margin: 76px auto 73px auto;
 }
 
 .description {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #fff;
+  color: #000;
   }
 
 .description .title-text {
-  margin: 57px 380px 14px 380px;
+  margin: 61px 380px 13px 380px;
 }
 
 .description .desctiption-text {
-  margin-bottom: 56px;
+  margin-bottom: 50px;
   line-height: 26px;
 }
   
 .features {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #fff;
+  color: #000;
 }
 
 .features-list {
@@ -598,27 +597,27 @@ img {
 }
 
 .text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-height: 256px;
   width: 400px;
 }
 
-.text-container p {
-  width: 280px;
+.text-container .title-text {
+  max-width: 151px;
+  margin: 47px auto 25px auto;
 }
 
-.text-container p:nth-of-type(1) {
-  width: 155px;
+.text-container .desctiption-text {
+  width: 305px;
+  margin: 0 auto 20px auto;
 }
 
 .feature-item .title-text {
-  color: #ffffff;
+  color: #fff;
   line-height: 21px;
 }
 
 .feature-item .desctiption-text {
-  color: #ffffff;
+  color: #fff;
 }
 
 .features-list > li:nth-of-type(1) {
@@ -629,7 +628,7 @@ img {
   width: 1200px;
   min-height: 256px;
   background-color: #81b3d2;
-  color: #ffffff;
+  color: #fff;
   background-image: url(../img/city-image.jpg);
   background-repeat: no-repeat;
   background-position: right;
@@ -643,7 +642,7 @@ img {
   width: 1200px;
   min-height: 256px;
   background-color: #81b3d2;
-  color: #ffffff;
+  color: #fff;
   background-image: url(../img/canyon-image.jpg);
   background-repeat: no-repeat;
   background-position: left;
@@ -657,11 +656,16 @@ img {
 }
 
 .feature-item-side .title-text {
-  color: #000000;
+  color: #000;
 }
 
 .feature-item-side .desctiption-text {
-  color: #333333;
+  color: #333;
+  width: 265px;
+}
+
+.feature-item-side .desctiption-text-reduced {
+  width: 250px;
 }
 
 .benefits-list {
@@ -675,17 +679,17 @@ img {
 
 .benefit-item {
   min-width: 400px;
-    color: #000000;
+  color: #000;
 }
 
 .benefit-item .title-text {
-  padding: 142px 124px 3px 124px;
+  padding-top: 138px;
 }
 
 .benefit-item .desctiption-text {
   line-height: 21px;
-  margin-left: 58px;
-  margin-right: 58px;
+  width: 285px;
+  margin: 0 auto;
 }
 
 .benefit-house {
@@ -712,21 +716,21 @@ img {
 }
 
 .offer {
-  background-color: #ffffff;
-  text-align: center;
+  min-height: 291px;
+  background-color: #fff;
 }
 
 .offer .desctiption-text {
+  width: 454px;
   font-size: 14px;
   line-height: 24px;
-  padding: 0px 355px 130px 355px;
-  margin: 0;
+  padding-bottom: 134px;
+  margin: 0 auto 0px auto;
 }
 
-.offer-question {
+.offer .title-text {
   padding-top: 50px;
-  margin: 0;
-  margin-bottom: 27px;
+  margin: 0 auto 23px auto;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -748,8 +752,8 @@ img {
 .modal a {
   display: block;
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 31px;
+  padding-top: 33px;
+  padding-bottom: 32px;
   text-align: center;
   background-color: #766357;
   color: #fff;
@@ -770,7 +774,7 @@ img {
   padding-top: 55px;
   width: 568px;
   min-height: 340px;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 0 38px 95px -21px rgba(0, 0, 0, 0.2);
 }
 
@@ -833,7 +837,7 @@ img {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 .modal-search input[type="date"],
@@ -841,7 +845,7 @@ img {
 .modal-search button {
   height: 38px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   background-color: #f2f2f2;
   border: none;
   padding: 0;
@@ -909,10 +913,10 @@ img {
 .button::after {
   content: "";
   position: absolute;
-  width: 12px;
+  width: 11px;
   height: 3px;
   background-color: #a9a9a9;
-  top: 19px;
+  top: 18px;
   left: 13px;
 }
 
@@ -929,11 +933,11 @@ img {
 .button-add::after {
   content: "";
   position: absolute;
-  width: 12px;
+  width: 11px;
   height: 3px;
   background-color: #a9a9a9;
   transform: rotate(90deg);
-  top: 19px;
+  top: 18px;
   left: 13px;
 }
 
@@ -943,7 +947,7 @@ img {
   justify-content: flex-end;
   min-height: 593px;
   background-color: #fff;
-  box-shadow: 0 20px 30px 0 rgba(50, 50, 50, .3), 0 20px 30px 0 #ffffff;
+  box-shadow: 0 20px 30px 0 rgba(50, 50, 50, .3), 0 20px 30px 0 #fff;
 }
 
 .inner-page .main-footer {
@@ -964,7 +968,8 @@ img {
   font-size: 21px;
   font-weight: 700;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 48px;
+  color: #000;
 }
 
 .footer-visitsedona p{
@@ -981,7 +986,7 @@ img {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  min-width: 156px;
+  min-width: 150px;
   margin: 0;
   padding: 0;
 }
@@ -1047,16 +1052,15 @@ img {
   height: 41px;
 }
 
-.academy-button path {
-  fill: #231f20;
-}
-
 .academy-button:focus path,
-.academy-button:hover path {
+.academy-button:hover path,
+.academy-button:hover rect,
+.academy-button:focus rect{
   fill: #81b3d2;
 }
 
-.academy-button:active path {
+.academy-button:active path,
+.academy-button:active rect {
   fill: #bdbbbc;
 }
 
