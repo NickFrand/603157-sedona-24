@@ -339,8 +339,11 @@ img {
 }
 
 .options-down-arrow {
-  padding-right: 73px;
-  padding-left: 12px;
+  padding: 2px 73px 0 12px;
+}
+
+.options-up-arrow {
+  padding-top: 4px;
 }
 
 .catalog {
@@ -362,7 +365,7 @@ img {
   padding-top: 27px;
   padding-left: 237px;
   width: 258px;
-  height: 90px;
+  height: 93px;
   background-image: url("../img/hotel-photo1.jpg");
   background-repeat: no-repeat;
   background-position: 72px 30px;
@@ -383,10 +386,10 @@ img {
 .catalog-item-right-colmun {
   display: flex;
   flex-direction: column;
-  width: 111px;
-  height: 90px;
+  width: 110px;
+  height: 93px;
   margin-left: 522px;
-  margin-top: 29px;
+  margin-top: 32px;
 }
 
 .catalog-item-right-colmun .catalog-item-rating {
@@ -431,10 +434,11 @@ img {
 
 .catalog-item-type {
   width: 110px;
+  padding-bottom: 3px;
 }
 
 .catalog-item-price {
-  padding-left: 6px;
+  padding:0 0 3px 6px;
 }
 
 .catalog-item-title {
@@ -795,9 +799,7 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 458px;
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   padding: 0;
 }
 
