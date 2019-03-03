@@ -48,8 +48,6 @@ search.addEventListener("click", function (evt) {
     }
 } )
 
-
-
 calendarArrival.addEventListener("click", function (evt) {
     evt.preventDefault ();
     arrivalDate.focus();
