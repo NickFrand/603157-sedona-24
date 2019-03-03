@@ -177,6 +177,8 @@ margin: 24px 0 0 0;
 }
 
 .filter-cost-container {
+  display: flex;
+  justify-content: space-between;
   width: 314px;
   border: 2px solid #fff;
   border-radius: 2px;
@@ -282,6 +284,7 @@ margin: 24px 0 0 0;
 }
 
 .button-filter {
+  max-width: 140px;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -329,12 +332,14 @@ margin: 24px 0 0 0;
 }
 
 .options-found {
+  max-width: 120px;
   color: #000;
   font-size: 21px;
   font-weight: 700;
 }
 
 .options-about {
+  max-width: 85px;
   color: #000;
   line-height: 21px;
   font-size: 12px;
@@ -343,6 +348,7 @@ margin: 24px 0 0 0;
 }
 
 .button-option {
+  max-width: 85px;
   font-size: 12px;
   line-height: 21px;
   font-weight: 400;
